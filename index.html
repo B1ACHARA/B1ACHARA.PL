@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b1achara - Portfolio</title>
+    <!-- Nowoczesny, prestiżowy font Google: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Blokada zapamiętywania pozycji scrolla - musi być w head
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+    </script>
+</head>
+
+<body>
+    <!-- PRELOADER: Prestiżowa animacja startowa -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-content">
+            <h1 class="loader-logo">B1ACHARA<span>.</span></h1>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wzbogacone Tło: Szum (Noise) nadający luksusowej tekstury -->
+    <div class="noise-overlay"></div>
+
+    <!-- Siatka (Grid) i Światło podążające za kursorem -->
+    <div class="bg-grid"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- DYNAMICZNE MENU (GLASSMORPHISM) -->
+    <nav class="glass-nav" id="main-nav">
+        <div class="nav-left">
+            <span class="nav-logo">B1ACHARA<span>.</span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">O mnie</a></li>
+            <li><a href="#portfolio" class="nav-link">Realizacje</a></li>
+            <li><a href="#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- GŁÓWNA TREŚĆ STRONY -->
+    <main>
+        <!-- SEKCJA: POWITANIE (HERO) -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">Twórca & Developer</div>
+                <h1 class="hero-title">B1ACHARA<span>.</span></h1>
+                <p class="hero-subtitle">Tworzenie innowacyjnych stron, zaawansowanych aplikacji i najwyższej jakości
+                    wideo. Przekształcam Twoje wizje w dopracowane, cyfrowe doświadczenia.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Zobacz realizacje</a>
+                    <a href="#contact" class="btn btn-secondary">Skontaktuj się</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <!-- Wielka fioletowa kula światła za renderem -->
+                <div class="hero-orb"></div>
+                <img src="rendery/b1achara.png" alt="Render 3D b1achara" class="hero-render" />
+            </div>
+        </section>
+
+        <!-- SEKCJA: O MNIE (DEVELOPER DASHBOARD REDESIGN) -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">O mnie<span>.</span></h2>
+            <div class="dashboard-window">
+                <!-- Top Bar -->
+                <div class="dashboard-header">
+                    <div class="window-controls">
+                        <span class="dot-ctrl red"></span>
+                        <span class="dot-ctrl yellow"></span>
+                        <span class="dot-ctrl green"></span>
+                    </div>
+                    <div class="window-title">about.me — Visual Studio Code</div>
+                </div>
+
+                <div class="dashboard-body">
+                    <!-- Sidebar -->
+                    <aside class="dashboard-sidebar">
+                        <div class="sidebar-item active">
+                            <svg viewBox="0 0 24 24" class="icon-sm">
+                                <path
+                                    d="M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z"
+                                    fill="currentColor" />
+                            </svg>
+                            <span>profile.js</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <svg viewBox="0 0 24 24" class="icon-sm">
+                                <path
+                                    d="M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z"
+                                    fill="currentColor" />
+                            </svg>
+                            <span>hobbies.css</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <svg viewBox="0 0 24 24" class="icon-sm">
+                                <path
+                                    d="M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z"
+                                    fill="currentColor" />
+                            </svg>
+                            <span>stats.json</span>
+                        </div>
+                    </aside>
+
+                    <!-- Main Content -->
+                    <main class="dashboard-content">
+                        <div class="code-area">
+                            <div class="line"><span class="code-keyword">const</span> <span
+                                    class="code-var">developer</span> = {</div>
+                            <div class="line indent"><span class="code-key">name</span>: <span
+                                    class="code-string">"B1ACHARA"</span>,</div>
+                            <div class="line indent"><span class="code-key">age</span>: <span
+                                    class="code-num">15</span>,</div>
+                            <div class="line indent"><span class="code-key">role</span>: <span
+                                    class="code-string">"Junior Developer"</span>,</div>
+                            <div class="line indent"><span class="code-key">passion</span>: <span
+                                    class="code-string">"Pisanie linijek kodu"</span>,</div>
+                            <div class="line indent"><span class="code-key">favoriteAnimal</span>: <span
+                                    class="code-string">"Kocięta"</span></div>
+                            <div class="line">};</div>
+                            <div class="line"></div>
+                            <div class="line"><span class="code-comment">// Krótka historia</span></div>
+                            <div class="line"><span class="code-keyword">function</span> <span
+                                    class="code-func">getBio</span>() {</div>
+                            <div class="line indent"><span class="code-keyword">return</span> <span
+                                    class="code-string">`Mam 15 lat i od najmłodszych lat fascynuje mnie świat
+                                    technologii.</span></div>
+                            <div class="line indent"><span class="code-string">Programowanie stało się sposobem na
+                                    wyrażanie mojej kreatywności.</span></div>
+                            <div class="line indent"><span class="code-string">W wolnym czasie jestem wielkim
+                                    miłośnikiem kociąt</span></div>
+                            <div class="line indent"><span class="code-string">(choć niestety jeszcze nie mam
+                                    własnego).`</span>;</div>
+                            <div class="line">}</div>
+                        </div>
+
+                        <div class="dashboard-footer-info">
+                            <div class="status-badge">
+                                <span class="status-dot pulse"></span>
+                                <span class="status-label">Aktywnie tworzę</span>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKCJA: REALIZACJE (SLIDER) -->
+        <section id="portfolio" class="portfolio-section">
+            <h2 class="section-title">Realizacje<span>.</span></h2>
+            <p class="section-desc">Zbiór moich najciekawszych projektów, od zaawansowanych wtyczek po nowoczesne
+                strony.</p>
+
+            <div class="realizacje-slider">
+                <div class="slider-container" id="project-slider">
+                    <!-- Projekt 1: CATCORE.PL -->
+                    <div class="project-slide active">
+                        <div class="project-image">
+                            <img src="rendery/catcore.png" alt="CATCORE.PL" class="project-img-content">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Minecraft Server</span>
+                            <h3>CATCORE.PL</h3>
+                            <p>Autorski projekt serwera Minecraft, redefiniujący rozgrywkę Survival. Unikalne systemy.</p>
+                            <div class="project-tags">
+                                <span>1.21.7 - 26.1</span>
+                                <span>Survival</span>
+                                <span>CUTE</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://discord.gg/2f8V5B7WX9" target="_blank" class="btn-project discord">
+                                    <svg viewBox="0 0 127.14 96.36" class="icon-sm">
+                                        <path
+                                            d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.39,80.21a105.73,105.73,0,0,0,32.17,16.15,77.7,77.7,0,0,0,6.89-11.11,68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1,105.25,105.25,0,0,0,32.19-16.14C131,50.45,123.57,26.8,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5.07-12.73,11.44-12.73S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5.07-12.73,11.44-12.73S96.25,46,96.12,53,91.08,65.69,84.69,65.69Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    Wbij na Discord
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projekt 2: Plugin na lobby -->
+                    <div class="project-slide">
+                        <div class="project-image no-border" id="video-container-1">
+                            <div class="video-preview" onclick="loadVideo('video-container-1', 'BTzLycXLiR8')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('https://img.youtube.com/vi/BTzLycXLiR8/maxresdefault.jpg');">
+                                </div>
+                                <div class="play-overlay">
+                                    <div class="play-btn-circle">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8,5.14V19.14L19,12.14L8,5.14Z" fill="currentColor" />
+                                        </svg>
+                                    </div>
+                                    <span>ZOBACZ PREZENTACJĘ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Minecraft Plugin</span>
+                            <h3>Plugin na lobby</h3>
+                            <p>Kompletne rozwiązanie dla hubów i lobby. Intuicyjny wybór trybów, optymalizacja
+                                widoczności graczy.</p>
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>Spigot</span>
+                                <span>Paper</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://discord.gg/wvnWYx337X" target="_blank" class="btn-project discord">
+                                    <svg viewBox="0 0 127.14 96.36" class="icon-sm">
+                                        <path
+                                            d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.39,80.21a105.73,105.73,0,0,0,32.17,16.15,77.7,77.7,0,0,0,6.89-11.11,68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1,105.25,105.25,0,0,0,32.19-16.14C131,50.45,123.57,26.8,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5.07-12.73,11.44-12.73S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5.07-12.73,11.44-12.73S96.25,46,96.12,53,91.08,65.69,84.69,65.69Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    Pobierz na Discord
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projekt 3: B1ACHARA Portfolio -->
+                    <div class="project-slide">
+                        <div class="project-image">
+                            <img src="rendery/strona.png" alt="B1ACHARA Portfolio" class="project-img-content fit-top">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Development</span>
+                            <h3>B1ACHARA Portfolio</h3>
+                            <p>Nowoczesna strona typu portfolio z efektami glassmorphism, dynamicznym kursorem i wysoką
+                                wydajnością.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://discord.gg/wvnWYx337X" target="_blank" class="btn-project discord">
+                                    <svg viewBox="0 0 127.14 96.36" class="icon-sm">
+                                        <path
+                                            d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.39,80.21a105.73,105.73,0,0,0,32.17,16.15,77.7,77.7,0,0,0,6.89-11.11,68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1,105.25,105.25,0,0,0,32.19-16.14C131,50.45,123.57,26.8,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5.07-12.73,11.44-12.73S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5.07-12.73,11.44-12.73S96.25,46,96.12,53,91.08,65.69,84.69,65.69Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    Zakup na Discord
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nawigacja slidera -->
+                <div class="slider-nav">
+                    <button class="nav-btn prev" onclick="moveSlider(-1)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                    <div class="slider-dots" id="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="nav-btn next" onclick="moveSlider(1)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKCJA: KONTAKT -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Skontaktuj się<span>.</span></h2>
+                    <p class="section-desc">Masz pomysł na projekt? Chcesz nawiązać współpracę? Napisz do mnie, a
+                        wspólnie stworzymy coś wyjątkowego.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-link email-copy" onclick="copyEmail()" title="Kliknij, aby skopiować">
+                                <div class="contact-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M18,13l-6,4.5L6,13V8l6,4.5L18,8V13z" />
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p id="email-text">jp.b1achara@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://youtube.com/@b1acharayt" target="_blank" class="contact-link yt">
+                                <div class="contact-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.86-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z" />
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <h3>YouTube</h3>
+                                    <p>@b1acharayt</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://tiktok.com/@b1acharayt" target="_blank" class="contact-link tt">
+                                <div class="contact-icon-circle">
+                                    <svg viewBox="0 0 448 512" fill="currentColor">
+                                        <path
+                                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <h3>TikTok</h3>
+                                    <p>@b1acharayt</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-link discord-copy" onclick="copyDiscordName()"
+                                title="Kliknij, aby skopiować">
+                                <div class="contact-icon-circle">
+                                    <svg viewBox="0 0 127.14 96.36" fill="currentColor">
+                                        <path
+                                            d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.48,80.1a105.73,105.73,0,0,0,32.22,16.26,77.7,77.7,0,0,0,6.89-11.11,68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1,105.25,105.25,0,0,0,32.24-16.27C129.38,53.36,124.95,29.68,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <h3>Discord</h3>
+                                    <p id="discord-name">ccb1mc</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper discord-card">
+                    <div class="discord-header">
+                        <div class="discord-icon">
+                            <svg viewBox="0 0 127.14 96.36" fill="currentColor">
+                                <path
+                                    d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.48,80.1a105.73,105.73,0,0,0,32.22,16.26,77.7,77.7,0,0,0,6.89-11.11,68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1,105.25,105.25,0,0,0,32.24-16.27C129.38,53.36,124.95,29.68,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+                            </svg>
+                        </div>
+                        <div class="discord-text">
+                            <h3>Mój serwer Discord</h3>
+                            <p>Dołącz do społeczności, uzyskaj pomoc i śledź moje projekty na bieżąco.</p>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/wvnWYx337X" target="_blank"
+                        class="btn btn-primary btn-block btn-discord">Dołącz do Discorda</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- STOPKA (GLASSMORPHISM) -->
+    <footer class="glass-footer">
+        <div class="footer-left">
+            <span class="footer-logo">B1ACHARA<span>.</span></span>
+            <span class="footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</span>
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://youtube.com/@b1acharayt" target="_blank" class="social-icon yt" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.86-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z" />
+                </svg>
+            </a>
+            <a href="https://tiktok.com/@b1acharayt" target="_blank" class="social-icon tt" aria-label="TikTok">
+                <svg viewBox="0 0 448 512" fill="currentColor">
+                    <path
+                        d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Skrypty do interakcji -->
+    <script>
+        // --- 1. EKRAN ŁADOWANIA (PRIORYTET) ---
+        (function() {
+            const loader = document.getElementById('loader');
+            function removeLoader() {
+                if (loader && !loader.classList.contains('fade-out')) {
+                    loader.classList.add('fade-out');
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 800);
+                }
+            }
+            window.addEventListener('load', () => setTimeout(removeLoader, 200));
+            setTimeout(removeLoader, 1300); // Fail-safe
+        })();
+
+        // --- 2. ZMIENNE I ELEMENTY ---
+        const nav = document.getElementById('main-nav');
+        const sections = document.querySelectorAll("section");
+        const navLinksArr = document.querySelectorAll(".nav-link");
+        const cursorGlow = document.querySelector('.cursor-glow');
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinksMobile = document.getElementById('nav-links');
+        
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.project-slide');
+        const dots = document.querySelectorAll('.slider-dots .dot');
+        const sliderContainer = document.getElementById('project-slider');
+
+        // --- 3. DYNAMICZNE MENU (SCROLL) ---
+        window.addEventListener('scroll', () => {
+            if (nav) {
+                if (window.scrollY > 50) nav.classList.add('scrolled');
+                else nav.classList.remove('scrolled');
+            }
+
+            // ScrollSpy
+            let current = "";
+            sections.forEach((section) => {
+                if (pageYOffset >= section.offsetTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinksArr.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        });
+
+        // --- 4. MENU MOBILNE ---
+        if (menuToggle && navLinksMobile) {
+            const links = navLinksMobile.querySelectorAll('a');
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinksMobile.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            });
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    navLinksMobile.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
+        }
+
+        // --- 5. SLIDER REALIZACJI ---
+        function updateSlider() {
+            if (sliderContainer) {
+                sliderContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+                slides.forEach((slide, i) => slide.classList.toggle('active', i === currentSlide));
+                dots.forEach((dot, i) => dot.classList.toggle('active', i === currentSlide));
+            }
+        }
+
+        function moveSlider(direction) {
+            currentSlide += direction;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            updateSlider();
+        }
+
+        // --- 6. FUNKCJE POMOCNICZE (COPY, VIDEO, GLOW) ---
+        function copyDiscordName() {
+            const name = "ccb1mc";
+            navigator.clipboard.writeText(name);
+            const el = document.getElementById('discord-name');
+            const old = el.innerText;
+            el.innerText = "Skopiowano!";
+            setTimeout(() => el.innerText = old, 2000);
+        }
+
+        function copyEmail() {
+            const email = "jp.b1achara@gmail.com";
+            navigator.clipboard.writeText(email);
+            const el = document.getElementById('email-text');
+            const old = el.innerText;
+            el.innerText = "Skopiowano!";
+            setTimeout(() => el.innerText = old, 2000);
+        }
+
+        function loadVideo(containerId, videoId) {
+            const container = document.getElementById(containerId);
+            if (container) {
+                container.innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+            }
+        }
+
+        // Cursor Glow
+        window.addEventListener('mousemove', (e) => {
+            if (cursorGlow) {
+                cursorGlow.style.transform = `translate(${e.clientX - 400}px, ${e.clientY - 400}px)`;
+            }
+        });
+
+        // Reset scrolla na start
+        if (window.location.hash) history.replaceState(null, null, window.location.pathname);
+        window.scrollTo(0, 0);
+
+        // --- 7. OBSŁUGA SWIPE (DOTYK) DLA SLIDERA ---
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        if (sliderContainer) {
+            sliderContainer.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            sliderContainer.addEventListener('touchend', e => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, { passive: true });
+        }
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            if (touchStartX - touchEndX > swipeThreshold) {
+                // Przesunięcie w lewo -> następny slajd
+                moveSlider(1);
+            } else if (touchEndX - touchStartX > swipeThreshold) {
+                // Przesunięcie w prawo -> poprzedni slajd
+                moveSlider(-1);
+            }
+        }
+    </script>
+</body>
+</html>
